@@ -16,7 +16,7 @@ a camera that "sees the clouds coming" can anticipate these ramps.
 | Component | Description |
 | --- | --- |
 | Data | SKIPP'D benchmark (Stanford, 2017-2019): 64x64 sky images + 1-min PV output |
-| Target | Clear-sky index at t+15 min, k = P / P_clear (P_clear from a calibrated `pvlib` model) |
+| Target | Normalized PV power at t+15 min (clear-sky index k = P / P_clear as an ablation; P_clear from a calibrated `pvlib` model) |
 | Model | Shared CNN frame encoder -> LSTM over 8 frames -> fusion with PV history and sun geometry -> MLP head |
 | Baselines | Smart persistence (no learning); ridge regression on PV history only |
 | Metrics | RMSE, MAE (kW), forecast skill vs. smart persistence, on sunny and cloudy test days |
