@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+pvlib>=0.10
+datasets>=2.18
+torch>=2.1
